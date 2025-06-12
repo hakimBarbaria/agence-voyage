@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Réservations de Taxis</title>
+    <link rel="stylesheet" href="../css/dashboard-taxis.css" />
+    <link rel="stylesheet" href="../css/dashboard-hotels.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="logo">Traveling</div>
+        <nav class="nav-links" id="navLinks">
+          <a href="dashboard-hotels.html">Hôtels</a>
+          <a href="dashboard-taxis.html">Taxis</a>
+          <a href="dashboard-visas.html">Visas</a>
+          <a href="hotel.html">Réserver un Hôtel</a>
+          <a href="taxi.html">Réserver un Taxi</a>
+          <a href="visa.html">Réserver une Visa</a>
+          <a href="user.html">Profil</a>
+          <button class="logout-btn" id="logoutBtn">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Déconnexion</span>
+          </button>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <div class="dashboard">
+      <main class="main-content">
+        <div class="content-container">
+          <div class="header-content">
+            <h1 class="title">Réservations de Taxis</h1>
+            <p class="description">
+              Liste de toutes les réservations de taxis effectuées par vous
+            </p>
+          </div>
+
+          <div class="stats-cards">
+            <div class="stat-card">
+              <div class="stat-icon blue">
+                <i class="fas fa-taxi"></i>
+              </div>
+              <div class="stat-details">
+                <h3 class="stat-value">4</h3>
+                <p class="stat-label">Réservations actives</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon purple">
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              <div class="stat-details">
+                <h3 class="stat-value">400 Dt</h3>
+                <p class="stat-label">Montant total des réservations</p>
+              </div>
+            </div>
+          </div>
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Rechercher une réservation..."
+            />
+          </div>
+          <div class="table-container">
+            <table class="reservations-table">
+              <thead>
+                <tr>
+                  <th class="col-vehicle">Type de véhicule</th>
+                  <th class="col-route">Trajet</th>
+                  <th class="col-datetime">Date et heure</th>
+                  <th class="col-status">Statut</th>
+                  <th class="col-price">Prix</th>
+                  <th class="col-actions" style="text-align: center">
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="cell-vehicle">Berline standard</td>
+                  <td class="cell-route">Aéroport Tunis → Hôtel Dar El Jeld</td>
+                  <td class="cell-datetime">
+                    <div class="datetime">15 mai 2024, 14:30</div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge completed">Terminée</span>
+                  </td>
+                  <td class="cell-price">45 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cell-vehicle">SUV Premium</td>
+                  <td class="cell-route">
+                    Hôtel The Residence → Restaurant La Goulette
+                  </td>
+                  <td class="cell-datetime">
+                    <div class="datetime">12 juin 2024, 19:00</div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge completed">Terminée</span>
+                  </td>
+                  <td class="cell-price">75 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cell-vehicle">Minivan</td>
+                  <td class="cell-route">
+                    Hôtel Movenpick → Site archéologique de Carthage
+                  </td>
+                  <td class="cell-datetime">
+                    <div class="datetime">8 août 2024, 09:00</div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge completed">Terminée</span>
+                  </td>
+                  <td class="cell-price">120 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cell-vehicle">Berline luxe</td>
+                  <td class="cell-route">
+                    Aéroport Monastir → Hôtel Radisson Blu
+                  </td>
+                  <td class="cell-datetime">
+                    <div class="datetime">22 décembre 2024, 11:15</div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge completed">Terminée</span>
+                  </td>
+                  <td class="cell-price">90 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cell-vehicle">Berline standard</td>
+                  <td class="cell-route">
+                    Hôtel Royal Azur → Médina de Djerba
+                  </td>
+                  <td class="cell-datetime">
+                    <div class="datetime">15 mai 2025, 10:00</div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge confirmed">Confirmée</span>
+                  </td>
+                  <td class="cell-price">60 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cell-vehicle">Navette aéroport</td>
+                  <td class="cell-route">Hôtel Iberostar → Aéroport Enfidha</td>
+                  <td class="cell-datetime">
+                    <div class="datetime">10 juillet 2025, 16:45</div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge confirmed">Confirmée</span>
+                  </td>
+                  <td class="cell-price">50 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../js/dashboard-taxis.js"></script>
+    <script src="../js/dashboard-hotels.js"></script>
+  </body>
+</html>

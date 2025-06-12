@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Réservations d'Hôtels</title>
+    <link rel="stylesheet" href="../css/dashboard-hotels.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="logo">Traveling</div>
+        <nav class="nav-links" id="navLinks">
+          <a href="dashboard-hotels.html">Hôtels</a>
+          <a href="dashboard-taxis.html">Taxis</a>
+          <a href="dashboard-visas.html">Visas</a>
+          <a href="hotel.html">Réserver un Hôtel</a>
+          <a href="taxi.html">Réserver un Taxi</a>
+          <a href="visa.html">Réserver une Visa</a>
+          <a href="user.html">Profil</a>
+          <button class="logout-btn" id="logoutBtn">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Déconnexion</span>
+          </button>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="dashboard">
+      <main class="main-content">
+        <div class="content-container">
+          <div class="header-content">
+            <h1 class="title">Réservations d'Hôtels</h1>
+            <p class="description">
+              Liste de toutes les réservations d'hôtels effectuées par vous
+            </p>
+          </div>
+
+          <div class="stats-cards">
+            <div class="stat-card">
+              <div class="stat-icon blue">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <div class="stat-details">
+                <h3 class="stat-value">6</h3>
+                <p class="stat-label">Réservations actives</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon purple">
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              <div class="stat-details">
+                <h3 class="stat-value">8,500 Dt</h3>
+                <p class="stat-label">Montant total des réservations</p>
+              </div>
+            </div>
+          </div>
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Rechercher une réservation..."
+            />
+          </div>
+          <div class="table-container">
+            <table class="reservations-table">
+              <thead>
+                <tr>
+                  <th class="col-hotel">Hôtel</th>
+                  <th class="col-location">Emplacement</th>
+                  <th class="col-dates">Dates</th>
+                  <th class="col-status">Statut</th>
+                  <th class="col-price">Prix</th>
+                  <th class="col-actions" style="text-align: center">
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="cell-hotel">Dar El Jeld Hotel & Spa</td>
+                  <td class="cell-location">Tunis</td>
+                  <td class="cell-dates">
+                    <div class="date-range">
+                      <div class="check-in">15 juin 2025</div>
+                      <div class="check-out">20 juin 2025</div>
+                    </div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge completed">Terminée</span>
+                  </td>
+                  <td class="cell-price">1,250 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cell-hotel">The Residence Tunis</td>
+                  <td class="cell-location">Gammarth</td>
+                  <td class="cell-dates">
+                    <div class="date-range">
+                      <div class="check-in">10 juillet 2025</div>
+                      <div class="check-out">17 juillet 2025</div>
+                    </div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge completed">Terminée</span>
+                  </td>
+                  <td class="cell-price">1,960 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cell-hotel">Movenpick Resort & Marine Spa</td>
+                  <td class="cell-location">Sousse</td>
+                  <td class="cell-dates">
+                    <div class="date-range">
+                      <div class="check-in">5 août 2025</div>
+                      <div class="check-out">15 août 2025</div>
+                    </div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge completed">Terminée</span>
+                  </td>
+                  <td class="cell-price">2,200 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cell-hotel">Radisson Blu Resort & Thalasso</td>
+                  <td class="cell-location">Hammamet</td>
+                  <td class="cell-dates">
+                    <div class="date-range">
+                      <div class="check-in">20 juin 2025</div>
+                      <div class="check-out">27 juin 2025</div>
+                    </div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge completed">Terminée</span>
+                  </td>
+                  <td class="cell-price">1,260 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cell-hotel">Royal Azur Thalasso Golf</td>
+                  <td class="cell-location">Djerba</td>
+                  <td class="cell-dates">
+                    <div class="date-range">
+                      <div class="check-in">12 septembre 2025</div>
+                      <div class="check-out">19 septembre 2025</div>
+                    </div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge confirmed">Confirmée</span>
+                  </td>
+                  <td class="cell-price">1,680 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cell-hotel">Iberostar Diar El Andalous</td>
+                  <td class="cell-location">Port El Kantaoui</td>
+                  <td class="cell-dates">
+                    <div class="date-range">
+                      <div class="check-in">3 juillet 2025</div>
+                      <div class="check-out">10 juillet 2025</div>
+                    </div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge confirmed">Confirmée</span>
+                  </td>
+                  <td class="cell-price">1,120 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../js/dashboard-hotels.js"></script>
+  </body>
+</html>

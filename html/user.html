@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../css/user.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="logo">Traveling</div>
+        <nav class="nav-links" id="navLinks">
+          <a href="dashboard-hotels.html">Hôtels</a>
+          <a href="dashboard-taxis.html">Taxis</a>
+          <a href="dashboard-visas.html">Visas</a>
+          <a href="hotel.html">Réserver un Hôtel</a>
+          <a href="taxi.html">Réserver un Taxi</a>
+          <a href="visa.html">Réserver une Visa</a>
+          <a href="user.html">Profil</a>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="card">
+        <h2 class="title">Votre Profil</h2>
+        <p class="description">Modifiez votre profil ici</p>
+        <form id="profileForm">
+          <div class="avatar-wrapper">
+            <input type="file" id="avatarInput" />
+            <img
+              id="avatarPreview"
+              class="avatar"
+              src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cGVyc29ufGVufDB8fDB8fHww"
+              alt="avatar"
+            />
+          </div>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Your Username"
+              required
+              value="Amine Jguirim"
+            />
+          </div>
+          <div class="form-group">
+            <label for="bio">Bio</label>
+            <textarea id="bio" rows="4" placeholder="Your Bio" required>
+Je suis un développeur passionné par la technologie et l'innovation. J'aime créer des applications web et explorer de nouvelles idées.
+        </textarea
+            >
+          </div>
+          <button type="submit" id="submitBtn">Update</button>
+        </form>
+      </div>
+    </div>
+    <script src="../js/user.js"></script>
+    <script src="../js/dashboard-hotels.js"></script>
+  </body>
+</html>

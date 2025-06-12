@@ -1,0 +1,146 @@
+
+.visa-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.visa-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+.visa-title {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+
+.visa-description {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+    text-align: justify;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+.visa-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.visa-form__fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.visa-form__legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    padding: 0 1rem;
+}
+
+
+.visa-form__group {
+    margin-bottom: 1.5rem;
+}
+
+.visa-form__label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.visa-form__input,
+.visa-form__textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.visa-form__input:focus,
+.visa-form__textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.visa-form__textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+.visa-form__radio-group {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.visa-form__radio {
+    margin-right: 0.5rem;
+}
+
+.visa-form__radio-label {
+    cursor: pointer;
+    color: #555;
+}
+
+
+.btn--submit {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 2rem auto 0;
+    transition: background-color 0.3s;
+    width: 200px;
+    text-align: center;
+}
+
+.btn--submit:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .visa-form {
+        padding: 1rem;
+    }
+    
+    .visa-form__fieldset {
+        padding: 1.5rem;
+    }
+    
+    .visa-form__radio-group {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+}
+

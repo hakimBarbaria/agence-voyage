@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer compte</title>
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/signup.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../assets/logo.png" alt="Agence de Voyage">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Offres</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+            <a href="./login.html" class="btn login">Connexion</a>
+            <a href="./signup.html" class="btn signup">Inscription</a>
+        </div>
+
+        <div class="menu-icon">
+            <i class="bi bi-list" width="32" height="32"></i>
+        </div>
+    </nav>
+
+
+    <section class="signup-section">
+        <div class="signup-container">
+            <div class="signup-image">
+                <img src="../assets/signup.png" alt="Travel Background">
+            </div>
+            <div class="signup-form">
+                <h2>Inscription</h2>
+                <p>Créez un compte pour réserver vos voyages et profiter d'offres exclusives.</p>
+                <form action="" method="post" id="signupf">
+                    <div class="form-group">
+                        <label for="name">Nom Complet</label>
+                        <input type="text" id="name" name="name" placeholder="Entrez votre nom complet" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse Email</label>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mot de Passe</label>
+                        <input type="password" id="password" name="password" placeholder="Créez un mot de passe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmez le Mot de Passe</label>
+                        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez votre mot de passe" required>
+                    </div>
+                    <button type="submit" class="signup-button">S'inscrire</button>
+                    <p class="login-link">Déjà un compte ? <a href="./login.html">Se Connecter</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>À Propos</h3>
+                <p>
+                    Nous sommes une agence de voyage dédiée à rendre vos rêves de voyage réalité. Avec des années d'expérience, nous offrons des services de qualité pour des aventures inoubliables.
+                </p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contactez-Nous</h3>
+                
+                <ul>
+                    <li>📞 +216 56 395 111</li>
+                    <li>📧 hakim@gmail.com</li>
+                    <li>📍 2007 rue des intrepreneurs charguiyya matar</li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Suivez-Nous</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-twitch"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Voyage. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="../js/signup.js" ></script>
+</body>
+</html>

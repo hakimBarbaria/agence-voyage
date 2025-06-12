@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Réservation Taxi</title>
+    <link rel="stylesheet" href="../css/dashboard-hotels.css" />
+    <link href="../css/taxi.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="logo">Traveling</div>
+        <nav class="nav-links" id="navLinks">
+          <a href="dashboard-hotels.html">Hôtels</a>
+          <a href="dashboard-taxis.html">Taxis</a>
+          <a href="dashboard-visas.html">Visas</a>
+          <a href="hotel.html">Réserver un Hôtel</a>
+          <a href="taxi.html">Réserver un Taxi</a>
+          <a href="visa.html">Réserver une Visa</a>
+          <a href="user.html">Profil</a>
+          <button class="logout-btn" id="logoutBtn">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Déconnexion</span>
+          </button>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="taxi-booking">
+      <h1 class="taxi-booking__title">Réservez votre taxi aéroport privé</h1>
+      <p class="taxi-booking__subtitle">
+        Transferts simplifiés entre l'aéroport et votre hébergement
+      </p>
+
+      <form class="taxi-form">
+        <div class="taxi-form__type">
+          <h3 class="taxi-form__section-title">Type de transfert</h3>
+          <div class="taxi-form__radio-group">
+            <input
+              type="radio"
+              id="one-way"
+              name="transfer-type"
+              value="one-way"
+              checked
+              class="taxi-form__radio"
+            />
+            <label for="one-way" class="taxi-form__radio-label"
+              >Aller simple</label
+            >
+
+            <input
+              type="radio"
+              id="round-trip"
+              name="transfer-type"
+              value="round-trip"
+              class="taxi-form__radio"
+            />
+            <label for="round-trip" class="taxi-form__radio-label"
+              >Aller-retour</label
+            >
+          </div>
+        </div>
+
+        <div class="taxi-form__locations">
+          <h3 class="taxi-form__section-title">Détails du trajet</h3>
+
+          <div class="taxi-form__group">
+            <label for="pickup" class="taxi-form__label"
+              >Lieu de prise en charge</label
+            >
+            <input
+              required
+              type="text"
+              id="pickup"
+              class="taxi-form__input"
+              placeholder="Aéroport, adresse ou hôtel"
+            />
+          </div>
+
+          <div class="taxi-form__group">
+            <label for="destination" class="taxi-form__label"
+              >Destination</label
+            >
+            <input
+              required
+              type="text"
+              id="destination"
+              class="taxi-form__input"
+              placeholder="Adresse de destination"
+            />
+          </div>
+
+          <div class="taxi-form__datetime">
+            <div class="taxi-form__group">
+              <label for="date" class="taxi-form__label">Date</label>
+              <input required type="date" id="date" class="taxi-form__input" />
+            </div>
+
+            <div class="taxi-form__group">
+              <label for="time" class="taxi-form__label">Heure</label>
+              <input required type="time" id="time" class="taxi-form__input" />
+            </div>
+          </div>
+
+          <div
+            id="return-section"
+            class="taxi-form__return"
+            style="display: none"
+          >
+            <div class="taxi-form__group">
+              <label for="return-date" class="taxi-form__label"
+                >Date de retour</label
+              >
+              <input
+                type="text"
+                id="return-date"
+                class="taxi-form__input"
+                placeholder="jj/mm/aaaa"
+              />
+            </div>
+
+            <div class="taxi-form__group">
+              <label for="return-time" class="taxi-form__label"
+                >Heure de retour</label
+              >
+              <input
+                required
+                type="text"
+                id="return-time"
+                class="taxi-form__input"
+                placeholder="hh:mm"
+              />
+            </div>
+          </div>
+
+          <div class="taxi-form__group">
+            <label for="passengers" class="taxi-form__label"
+              >Nombre de passagers</label
+            >
+            <select id="passengers" class="taxi-form__select">
+              <option value="1">1 passager</option>
+              <option value="2" selected>2 passagers</option>
+              <option value="3">3 passagers</option>
+              <option value="4">4 passagers</option>
+              <option value="5">5 passagers</option>
+              <option value="6">6 passagers</option>
+            </select>
+          </div>
+          <div class="taxi-form__group">
+            <label for="type" class="taxi-form__label"
+              >Type de véhicule</label
+            >
+            <select id="type" class="taxi-form__select">
+              <option value="1" selected>Berline standard</option>
+              <option value="2">SUV Premium</option>
+              <option value="3">Minivan</option>
+              <option value="4">Berline luxe</option>
+              <option value="5">Berline standard</option>
+              <option value="6">Navette aéoroport</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="taxi-form__group">
+            <label for="prix" class="taxi-form__label"
+              >Prix</label
+            >
+            <input
+              required
+              type="text"
+              id="prix"
+              class="taxi-form__input"
+              placeholder="Prix"
+            />
+          </div>
+
+        <button type="submit" class="btn btn--primary taxi-form__submit">
+          Résérver
+        </button>
+      </form>
+    </main>
+    <script src="../js/index.js"></script>
+    <script src="../js/dashboard-hotels.js"></script>
+  </body>
+</html>

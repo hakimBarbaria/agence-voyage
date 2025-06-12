@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Demandes de Visas</title>
+    <link rel="stylesheet" href="../css/dashboard-visas.css" />
+    <link rel="stylesheet" href="../css/dashboard-hotels.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="logo">Traveling</div>
+        <nav class="nav-links" id="navLinks">
+          <a href="dashboard-hotels.html">Hôtels</a>
+          <a href="dashboard-taxis.html">Taxis</a>
+          <a href="dashboard-visas.html">Visas</a>
+          <a href="hotel.html">Réserver un Hôtel</a>
+          <a href="taxi.html">Réserver un Taxi</a>
+          <a href="visa.html">Réserver une Visa</a>
+          <a href="user.html">Profil</a>
+          <button class="logout-btn" id="logoutBtn">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Déconnexion</span>
+          </button>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="dashboard">
+      <main class="main-content">
+        <div class="content-container">
+          <div class="header-content">
+            <h1 class="title">Demandes de Visas</h1>
+            <p class="description">
+              Liste de toutes les demandes de visas effectuées par vous
+            </p>
+          </div>
+
+          <div class="stats-cards">
+            <div class="stat-card">
+              <div class="stat-icon blue">
+                <i class="fas fa-passport"></i>
+              </div>
+              <div class="stat-details">
+                <h3 class="stat-value">5</h3>
+                <p class="stat-label">Demandes en cours</p>
+              </div>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-icon purple">
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              <div class="stat-details">
+                <h3 class="stat-value">2,500 Dt</h3>
+                <p class="stat-label">Montant total des frais</p>
+              </div>
+            </div>
+          </div>
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Rechercher une demande..."
+            />
+          </div>
+          <div class="table-container">
+            <table class="reservations-table">
+              <thead>
+                <tr>
+                  <th class="col-type">Type de visa</th>
+                  <th class="col-country">Pays</th>
+                  <th class="col-dates">Dates de validité</th>
+                  <th class="col-status">Statut</th>
+                  <th class="col-price">Frais</th>
+                  <th class="col-actions" style="text-align: center">
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="cell-type">Visa touristique</td>
+                  <td class="cell-country">France (Schengen)</td>
+                  <td class="cell-dates">
+                    <div class="date-range">
+                      <div class="check-in">15 juin 2024</div>
+                      <div class="check-out">15 juillet 2024</div>
+                    </div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge completed">Approuvé</span>
+                  </td>
+                  <td class="cell-price">450 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cell-type">Visa d'affaires</td>
+                  <td class="cell-country">États-Unis</td>
+                  <td class="cell-dates">
+                    <div class="date-range">
+                      <div class="check-in">28 juillet 2025</div>
+                      <div class="check-out">28 aout 2027</div>
+                    </div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge pending">En traitement</span>
+                  </td>
+                  <td class="cell-price">750 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cell-type">Visa touristique</td>
+                  <td class="cell-country">Royaume-Uni</td>
+                  <td class="cell-dates">
+                    <div class="date-range">
+                      <div class="check-in">5 août 2025</div>
+                      <div class="check-out">5 octobre 2025</div>
+                    </div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge confirmed">Soumis</span>
+                  </td>
+                  <td class="cell-price">520 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="cell-type">Visa touristique</td>
+                  <td class="cell-country">Émirats Arabes Unis</td>
+                  <td class="cell-dates">
+                    <div class="date-range">
+                      <div class="check-in">12 septembre 2025</div>
+                      <div class="check-out">12 décembre 2025</div>
+                    </div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge rejected">Refusé</span>
+                  </td>
+                  <td class="cell-price">350 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="cell-type">Visa de travail</td>
+                  <td class="cell-country">Allemagne</td>
+                  <td class="cell-dates">
+                    <div class="date-range">
+                      <div class="check-in">3 juillet 2025</div>
+                      <div class="check-out">3 juillet 2026</div>
+                    </div>
+                  </td>
+                  <td class="cell-status">
+                    <span class="status-badge confirmed">Soumis</span>
+                  </td>
+                  <td class="cell-price">480 Dt</td>
+                  <td class="cell-actions">
+                    <div class="action-buttons">
+                      <button class="action-button edit" title="Modifier">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="action-button delete" title="Supprimer">
+                        <i class="fas fa-trash-alt"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="../js/dashboard-visas.js"></script>
+    <script src="../js/dashboard-hotels.js"></script>
+  </body>
+</html>

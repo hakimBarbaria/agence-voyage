@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visa</title>
+    <link rel="stylesheet" href="../css/dashboard-hotels.css" />
+    <link href="../css/visa.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="logo">Traveling</div>
+        <nav class="nav-links" id="navLinks">
+          <a href="dashboard-hotels.html">Hôtels</a>
+          <a href="dashboard-taxis.html">Taxis</a>
+          <a href="dashboard-visas.html">Visas</a>
+          <a href="hotel.html">Réserver un Hôtel</a>
+          <a href="taxi.html">Réserver un Taxi</a>
+          <a href="visa.html">Réserver une Visa</a>
+          <a href="user.html">Profil</a>
+          <button class="logout-btn" id="logoutBtn">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Déconnexion</span>
+          </button>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="visa-section">
+      <div class="visa-container">
+        <h1 class="visa-title">Visa by Traveling</h1>
+        <p class="visa-description">
+          Ce site vous fourni toutes les informations nécessaires pour déposer
+          votre demande de visa d'une manière efficace, rapide et sans failles.
+          Si vous désirez vous rendre en Europe, en Angleterre, aux Etats-Unis
+          ou au Canada, nos services sont faits pour vous ! Notre base de
+          données est mise à jour régulièrement, donc les informations dont vous
+          avez besoin vous seront accessibles à tout moment et au bout d'un
+          clic.
+        </p>
+
+        <form class="visa-form">
+          <fieldset class="visa-form__fieldset">
+            <legend class="visa-form__legend">
+              Formulaire d'inscription Visa by Traveling
+            </legend>
+
+            <div class="visa-form__radio-group">
+              <input
+                type="radio"
+                name="gender"
+                value="mr"
+                id="mr"
+                class="visa-form__radio"
+              />
+              <label for="mr" class="visa-form__radio-label">Mr</label>
+
+              <input
+                type="radio"
+                name="gender"
+                value="mme"
+                id="mme"
+                class="visa-form__radio"
+              />
+              <label for="mme" class="visa-form__radio-label">Mme</label>
+
+              <input
+                type="radio"
+                name="gender"
+                value="mlle"
+                id="mlle"
+                class="visa-form__radio"
+              />
+              <label for="mlle" class="visa-form__radio-label">Mlle</label>
+            </div>
+
+            <div class="visa-form__group">
+              <label for="prenom" class="visa-form__label">Prénom</label>
+              <input
+                type="text"
+                id="prenom"
+                name="prenom"
+                class="visa-form__input"
+                placeholder="Prénom"
+                required
+              />
+            </div>
+
+            <div class="visa-form__group">
+              <label for="nom" class="visa-form__label">Nom</label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                class="visa-form__input"
+                placeholder="Nom"
+                required
+              />
+            </div>
+
+            <div class="visa-form__group">
+              <label for="email" class="visa-form__label">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="visa-form__input"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div class="visa-form__group">
+              <label for="mobile" class="visa-form__label">Mobile</label>
+              <input
+                type="text"
+                id="mobile"
+                name="mobile"
+                class="visa-form__input"
+                placeholder="Mobile"
+                required
+              />
+            </div>
+
+            <div class="visa-form__group">
+              <label for="type" class="visa-form__label">Type de visa</label>
+              <input
+                list="visa-types"
+                id="type"
+                name="type"
+                class="visa-form__input"
+                placeholder="Type de visa"
+              />
+              <datalist id="visa-types">
+                <option value="Touristique">Touristique</option>
+                <option value="D'études">D'études</option>
+                <option value="Familial">Familial</option>
+                <option value="De travail">De travail</option>
+              </datalist>
+            </div>
+
+            <div class="visa-form__group">
+              <label for="region" class="visa-form__label">Région</label>
+              <input
+                list="regions"
+                id="region"
+                name="region"
+                class="visa-form__input"
+                placeholder="Sélectionner une destination"
+              />
+              <datalist id="regions">
+                <option value="Allemagne">Allemagne</option>
+                <option value="France">France</option>
+                <option value="Autriche">Autriche</option>
+                <option value="Japan">Japan</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+              </datalist>
+            </div>
+
+            <div class="visa-form__group">
+              <label for="message" class="visa-form__label">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="visa-form__textarea"
+                required
+                maxlength="50"
+                minlength="5"
+                rows="8"
+                placeholder="Entrer un message"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--submit">S'INSCRIRE</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <script src="../js/index.js"></script>
+    <script src="../js/dashboard-hotels.js"></script>
+  </body>
+</html>

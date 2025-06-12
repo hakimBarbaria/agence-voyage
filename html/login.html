@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se connecter</title>
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/login.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../assets/logo.png" alt="Agence de Voyage">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Offres</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+            <a href="./login.html" class="btn login">Connexion</a>
+            <a href="./signup.html" class="btn signup">Inscription</a>
+        </div>
+
+        <div class="menu-icon">
+            <i class="bi bi-list" width="32" height="32"></i>
+        </div>
+    </nav>
+
+    <section class="login-section">
+        <div class="login-container">
+            <div class="login-image">
+                <img src="../assets/login.png" alt="Travel Background">
+            </div>
+            <div class="login-form">
+                <h2>Connexion</h2>
+                <p>Connectez-vous pour accéder à votre compte et réserver votre prochain voyage.</p>
+                <form action="" method="post" id="loginf">
+                    <div class="form-group">
+                        <label for="email">Adresse Email</label>
+                        <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mot de Passe</label>
+                        <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe"
+                            required>
+                    </div>
+                    <div class="form-options">
+                        <label>
+                            <input type="checkbox" name="remember" id="remember"> Se souvenir de moi
+                        </label>
+                        <a href="./forgetPassword.html">Mot de passe oublié ?</a>
+                    </div>
+                    <button type="submit" class="login-button">Se Connecter</button>
+                    <p class="signup-link">Pas encore de compte ? <a href="./signup.html">S'inscrire</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>À Propos</h3>
+                <p>
+                    Nous sommes une agence de voyage dédiée à rendre vos rêves de voyage réalité. Avec des années d'expérience, nous offrons des services de qualité pour des aventures inoubliables.
+                </p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contactez-Nous</h3>
+                
+                <ul>
+                    <li>📞 +216 56 395 111</li>
+                    <li>📧 hakim@gmail.com</li>
+                    <li>📍 2007 rue des intrepreneurs charguiyya matar</li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Suivez-Nous</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-twitch"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Voyage. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/login.js" ></script>
+
+</body>
+
+</html>

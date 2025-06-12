@@ -1,0 +1,82 @@
+.pagination {
+    display: flex;
+    gap: 8px;
+    font-family: sans-serif;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .pagination span {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .pagination span:hover {
+    background-color: #f0f0f0;
+  }
+
+  .pagination .active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+      /* Search Section */
+      .search-container {
+          max-width: 1200px;
+          margin: 40px auto;
+          padding: 0 20px;
+          display: flex;
+          justify-content: center;
+      }
+
+      .search-box {
+          display: flex;
+          width: 100%;
+          max-width: 600px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          border-radius: 30px;
+          overflow: hidden;
+      }
+
+      .search-input {
+          flex: 1;
+          padding: 15px 20px;
+          border: none;
+          outline: none;
+          font-size: 16px;
+      }
+
+      .search-button {
+          background: #3498db;
+          color: white;
+          border: none;
+          padding: 0 25px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .search-button:hover {
+          background: #2980b9;
+      }
+
+      .search-button i {
+          font-size: 20px;
+      }
+
+      .recent-posts {
+          padding: 40px 20px 80px;
+      }
+
+      .posts-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          gap: 30px;
+          max-width: 1200px;
+          margin: 0 auto;
+      }

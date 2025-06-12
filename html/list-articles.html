@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des articles</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/list-articles.css">
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../assets/logo.png" alt="Agence de Voyage">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="../html/index.html">Accueil</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Offres</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-buttons">
+            <a href="./login.html" class="btn login">Connexion</a>
+            <a href="./signup.html" class="btn signup">Inscription</a>
+        </div>
+
+        <div class="menu-icon">
+            <i class="bi bi-list" width="32" height="32"></i>
+        </div>
+    </nav>
+
+    <section class="recent-posts">
+        <div class="section-header">
+            <h2>Articles Récents</h2>
+            <p class="section-subtitle">Découvrez nos derniers articles et mises à jour</p>
+        </div>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Rechercher des articles...">
+                <button class="search-button" id="searchButton">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="posts-container" id="articlesContainer">
+            <article class="post-card">
+                <div class="post-image">
+                    <img src="../assets/grece.jpg" alt="Conseils de Voyage">
+                    <div class="post-category">Guide de Voyage</div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-date">15 juin 2023</span>
+                        <span class="post-comments"><i class="bi bi-chat-left"></i> 24</span>
+                    </div>
+                    <h3 class="post-title">Top 10 des Destinations à Visiter en 2023</h3>
+                    <p class="post-excerpt">Découvrez les lieux les plus époustouflants à ajouter à votre liste de voyages cette année...</p>
+                    <a href="../html/article1.html" class="read-more">Lire la suite <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </article>
+            
+            <article class="post-card">
+                <div class="post-image">
+                    <img src="../assets/forest.jpg" alt="Aventure">
+                    <div class="post-category">Aventure</div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-date">8 juin 2023</span>
+                        <span class="post-comments"><i class="bi bi-chat-left"></i> 18</span>
+                    </div>
+                    <h3 class="post-title">Équipement Essentiel pour Votre Prochain Voyage d'Aventure</h3>
+                    <p class="post-excerpt">Préparez-vous intelligemment avec notre guide complet sur l'équipement de voyage d'aventure...</p>
+                    <a href="../html/article2.html" class="read-more">Lire la suite <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </article>
+            
+            <article class="post-card">
+                <div class="post-image">
+                    <img src="../assets/bali.jpg" alt="Culture">
+                    <div class="post-category">Culture</div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-date">1 juin 2023</span>
+                        <span class="post-comments"><i class="bi bi-chat-left"></i> 32</span>
+                    </div>
+                    <h3 class="post-title">Expériences Culturelles Immersives à Travers le Monde</h3>
+                    <p class="post-excerpt">Allez au-delà du tourisme et connectez-vous véritablement avec les cultures locales grâce à ces expériences uniques...</p>
+                    <a href="../html/article3.html" class="read-more">Lire la suite <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-image">
+                    <img src="../assets/paris.jpg" alt="Ville">
+                    <div class="post-category">Ville</div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-date">25 mai 2023</span>
+                        <span class="post-comments"><i class="bi bi-chat-left"></i> 15</span>
+                    </div>
+                    <h3 class="post-title">Les Secrets Cachés de Paris</h3>
+                    <p class="post-excerpt">Explorez les coins méconnus de la Ville Lumière que la plupart des touristes ne voient jamais...</p>
+                    <a href="../html/article4.html" class="read-more">Lire la suite <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-image">
+                    <img src="../assets/beach.jpg" alt="Plage">
+                    <div class="post-category">Plage</div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-date">18 mai 2023</span>
+                        <span class="post-comments"><i class="bi bi-chat-left"></i> 28</span>
+                    </div>
+                    <h3 class="post-title">Les Plus Belles Plages de Méditerranée</h3>
+                    <p class="post-excerpt">Détendez-vous sur les plages les plus paradisiaques de la Méditerranée, loin des foules touristiques...</p>
+                    <a href="../html/article5.html" class="read-more">Lire la suite <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-image">
+                    <img src="../assets/mountain.jpg" alt="Montagne">
+                    <div class="post-category">Montagne</div>
+                </div>
+                <div class="post-content">
+                    <div class="post-meta">
+                        <span class="post-date">10 mai 2023</span>
+                        <span class="post-comments"><i class="bi bi-chat-left"></i> 12</span>
+                    </div>
+                    <h3 class="post-title">Randonnée dans les Alpes: Guide Complet</h3>
+                    <p class="post-excerpt">Tout ce que vous devez savoir pour planifier votre prochaine aventure en montagne dans les Alpes...</p>
+                    <a href="../html/article6.html" class="read-more">Lire la suite <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+        <p class="pagination">
+            <span>0</span>
+            <span>1</span>
+            <span>2</span>
+            <span class="active">3</span>
+            <span>4</span>
+            <span>...</span>
+          </p>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>À Propos</h3>
+                <p>
+                    Nous sommes une agence de voyage dédiée à rendre vos rêves de voyage réalité. Avec des années d'expérience, nous offrons des services de qualité pour des aventures inoubliables.
+                </p>
+            </div>
+            <div class="footer-section links">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contactez-Nous</h3>
+                <ul>
+                    <li>📞 +216 56 395 111</li>
+                    <li>📧 hakim@gmail.com</li>
+                    <li>📍 2007 rue des intrepreneurs charguiyya matar</li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Suivez-Nous</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-twitch"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Voyage. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="../js/list-articles.js"></script>
+</body>
+</html>

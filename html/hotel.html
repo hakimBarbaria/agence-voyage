@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recherche d'Hôtels</title>
+    <link rel="stylesheet" href="../css/dashboard-hotels.css" />
+    <link href="../css/hotels.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../assets/logo.png">
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="logo">Traveling</div>
+        <nav class="nav-links" id="navLinks">
+          <a href="dashboard-hotels.html">Hôtels</a>
+          <a href="dashboard-taxis.html">Taxis</a>
+          <a href="dashboard-visas.html">Visas</a>
+          <a href="hotel.html">Réserver un Hôtel</a>
+          <a href="taxi.html">Réserver un Taxi</a>
+          <a href="visa.html">Réserver une Visa</a>
+          <a href="user.html">Profil</a>
+          <button class="logout-btn" id="logoutBtn">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Déconnexion</span>
+          </button>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main class="hotel-search">
+        <h1 class="hotel-search__title">
+          Vous résérvez : <span>Hôtels dans le monde</span>
+        </h1>
+
+        <form class="hotel-search__form">
+          <div class="hotel-search__form-group">
+            <label for="destination" class="hotel-search__label"
+              >Votre Destination</label
+            >
+            <input
+              required
+              type="text"
+              id="destination"
+              class="hotel-search__input"
+              placeholder="Entrer votre destination"
+            />
+          </div>
+
+          <div class="hotel-search__form-row">
+            <div class="hotel-search__form-group">
+              <label for="arrival" class="hotel-search__label"
+                >Votre Arrivée</label
+              >
+              <input
+                required
+                type="datetime-local"
+                id="arrival"
+                class="hotel-search__input"
+              />
+            </div>
+
+            <div class="hotel-search__form-group">
+              <label for="departure" class="hotel-search__label"
+                >Votre Départ</label
+              >
+              <input
+                required
+                type="datetime-local"
+                id="departure"
+                class="hotel-search__input"
+              />
+            </div>
+          </div>
+
+          <div class="hotel-search__form-row">
+            <div class="hotel-search__form-group">
+              <label for="nights" class="hotel-search__label">Nuitées</label>
+              <input
+                required
+                type="text"
+                id="nights"
+                class="hotel-search__input"
+                placeholder="Entrer le nombre de nuits "
+              />
+            </div>
+
+            <div class="hotel-search__form-group">
+              <label for="occupancy" class="hotel-search__label"
+                >Chambres et occupation</label
+              >
+              <input
+                required
+                type="text"
+                id="occupancy"
+                class="hotel-search__input"
+                placeholder="Chambres et occupation"
+              />
+            </div>
+
+            <div class="hotel-search__form-group">
+                <label for="prix" class="hotel-search__label"
+                  >Prix</label
+                >
+                <input
+                  required
+                  type="text"
+                  id="prix"
+                  class="hotel-search__input"
+                  placeholder="Prix"
+                />
+              </div>
+          </div>
+
+          <div class="hotel-search__actions">
+            <button type="submit" class="btn btn--primary">Résérver</button>
+          </div>
+        </form>
+    </main>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/dashboard-hotels.js"></script>
+  </body>
+</html>
