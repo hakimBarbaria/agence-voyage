@@ -56,5 +56,5 @@ document.getElementById('signupf').addEventListener('submit', function(event) {
     }));
 
     alert('Inscription réussie !');
-    window.location.href = '../html/login.html';
+    window.location.href = '../login.html';
 });
