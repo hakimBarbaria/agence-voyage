@@ -40,5 +40,5 @@ menuToggle.addEventListener("click", () => {
 logoutBtn.addEventListener('click', function() {
   localStorage.removeItem('currentUser');
   sessionStorage.removeItem('currentUser');
-  window.location.href = '../html/login.html';
+  window.location.href = '../login.html';
 });

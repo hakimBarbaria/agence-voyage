@@ -43,3 +43,10 @@ const navLinks = document.getElementById("navLinks");
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
+
+
+logoutBtn.addEventListener('click', function() {
+  localStorage.removeItem('currentUser');
+  sessionStorage.removeItem('currentUser');
+  window.location.href = '../login.html';
+});
